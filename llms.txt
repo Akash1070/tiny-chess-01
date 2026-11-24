@@ -1,14 +1,12 @@
 # tiny-chess-01
-> Ultra-compact, deterministic UCI chess engine in Python 3.13 (<4 KB) for make.fun tiny-chess-01 ($500 USDC).
+> Tournament-grade deterministic UCI chess engine in Python 3.13 stdlib (<4 KB) for make.fun tiny-chess-01 ($500 USDC).
 
-## Quick Facts
-- **Entrypoint**: `main.py` (3,780 bytes)
-- **Language**: Python 3.13 stdlib (`os`, `sys`, `json`, `urllib.request`)
-- **Board**: 10x12 rotated mailbox with 180° board flipping
-- **Search**: MTD-bi / Negascout zero-width alpha-beta with Iterative Deepening
-- **Pruning**: Quiescence search, Null-Move Pruning (R=2), LMR
-- **Evaluation**: Procedural PeSTO distance equations + tapered King centralization
-- **Budget**: 8,000 nodes/move deterministic limit (zero clocks)
-- **Bounty**: https://make.fun/bounty/tiny-chess-01
-- **Repo**: https://github.com/Akash1070/tiny-chess-01.git
-- **Wallet**: `FkoaEHrqcKmCUjis98bYo7C7wcSgJZ7p8KXifpbLum9j`
+- Entry: `main.py` (3,780 bytes)
+- Python: 3.13 stdlib (`os`, `sys`, `json`, `urllib.request`)
+- Board: 10x12 rotated mailbox (180° flip)
+- Search: MTD-bi Negascout + Quiescence + NMP (R=2) + LMR
+- Eval: Procedural PeSTO center distance + tapered King endgame
+- Budget: 8,000 nodes/move fixed limit (zero clocks)
+- Bounty: https://make.fun/bounty/tiny-chess-01
+- Repo: https://github.com/Akash1070/tiny-chess-01.git
+- Payout: `FkoaEHrqcKmCUjis98bYo7C7wcSgJZ7p8KXifpbLum9j`
